@@ -36,7 +36,7 @@ In case the user wants to add the item back to the main shopping list, it can be
 
 ## Get the project
 
-Git clone/download the project code from [https://github.com/sulekhajamaluddin/shopping-list]https://github.com/sulekhajamaluddin/shopping-list
+Git clone/download the project code from [https://github.com/sulekhajamaluddin/Todo-List]https://github.com/sulekhajamaluddin/Todo-List
 
 ### `npm install`
 
