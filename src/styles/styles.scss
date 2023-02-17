@@ -1,0 +1,18 @@
+// Base
+@import "./base/variables";
+@import "./base/typography";
+@import "./base/layout";
+
+//Pages
+@import "./pages/App.scss";
+
+//Screens
+@import "./screens/Welcome.scss";
+@import "./screens/Shopping.scss";
+
+//Components
+@import "./components/Modal.scss";
+@import "./components/Form.scss";
+@import "./components/Sorter.scss";
+@import "./components/Item.scss";
+@import "./components/ErrorMessages.scss";

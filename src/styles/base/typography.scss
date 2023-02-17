@@ -1,0 +1,60 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@700&display=swap");
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+body {
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 35px;
+
+  @media (min-width: 550px) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 27px;
+
+  @media (min-width: 550px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+
+  @media (min-width: 550px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+button {
+  font-family: inherit;
+}
+
+button,
+span {
+  font-size: $text-paragraph;
+  @media (min-width: 550px) {
+    font-size: $text-paragraph-desktop;
+  }
+}

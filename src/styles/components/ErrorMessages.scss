@@ -1,0 +1,13 @@
+.alert {
+  align-self: flex-start;
+
+  .label {
+    font-size: 14px;
+    font-weight: 700;
+    color: red;
+
+    @media (min-width: 1280px) {
+      font-size: 18px;
+    }
+  }
+}

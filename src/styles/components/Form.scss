@@ -1,0 +1,33 @@
+.form {
+  height: 100%;
+  width: 100%;
+  padding: $space-medium;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-medium;
+
+  input {
+    width: 295px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    padding: $space-small;
+    background: $color-light-grey;
+  }
+
+  .button {
+    height: 44px;
+    width: 200px;
+    background: $color-blue;
+    border-radius: 44px;
+  }
+
+  .label {
+    font-size: 14px;
+    font-weight: 700;
+    @media (min-width: 1280px) {
+      font-size: 18px;
+    }
+  }
+}

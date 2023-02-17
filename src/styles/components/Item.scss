@@ -1,0 +1,57 @@
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  input[type="checkbox"] {
+    opacity: 0;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  label {
+    display: flex;
+  }
+
+  label::before {
+    content: "";
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+    background-color: $color-light-grey;
+  }
+
+  input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    color: white;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 25px;
+    background-color: $color-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .details {
+    width: 100%;
+    padding: $space-small;
+    display: flex;
+    align-items: center;
+  }
+
+  .label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: auto;
+
+    @media (min-width: 550px) {
+      font-size: 18px;
+    }
+  }
+}

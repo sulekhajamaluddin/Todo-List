@@ -1,0 +1,19 @@
+.shopping {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-medium;
+  max-width: 550px;
+
+  @media (min-width: $media-big-phones) {
+    margin: 0 auto;
+  }
+
+  .list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: $space-small;
+  }
+}
