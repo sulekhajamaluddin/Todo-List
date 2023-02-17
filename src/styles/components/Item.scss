@@ -5,8 +5,8 @@
 
   input[type="checkbox"] {
     opacity: 0;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     position: absolute;
     cursor: pointer;
   }
@@ -17,8 +17,8 @@
 
   label::before {
     content: "";
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     border-radius: 8px;
     background-color: $color-light-grey;
   }
@@ -28,7 +28,7 @@
     color: white;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    font-size: 25px;
+    font-size: 20px;
     background-color: $color-blue;
     display: flex;
     align-items: center;

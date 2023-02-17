@@ -35,7 +35,7 @@ export default function Shopping({
       <List items={pendingItems} toggleAcquired={toggleAcquired} />
       <button onClick={() => handleClick()}>Add item</button>
       <button
-        className="label button-no-background"
+        className="label btn-clear"
         onClick={() => setShowItems(!showItems)}
       >
         <FontAwesomeIcon icon={icon} />

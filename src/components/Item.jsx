@@ -2,7 +2,7 @@ export default function Item({ item, toggleAcquired }) {
   const checked = item.isAcquired;
 
   return (
-    <div className="item">
+    <article className="item">
       <input
         data-testid="input"
         type={"checkbox"}
@@ -14,6 +14,6 @@ export default function Item({ item, toggleAcquired }) {
         <span>{item.itemName}</span>
         <span className="label">{item.itemPrice}:-</span>
       </div>
-    </div>
+    </article>
   );
 }

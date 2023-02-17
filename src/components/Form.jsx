@@ -45,10 +45,7 @@ export default function Form({ items, addNewItem, closeModal }) {
       <FormInput text={"Price"} setItem={setItemPrice} placeholder={"250:-"} />
       {!isValid && <ErrorMessages errors={priceErrors} />}
       <input data-testid="submit" className="label button" type={"submit"} />
-      <button
-        className="label button-no-background"
-        onClick={(e) => handleCancel(e)}
-      >
+      <button className="label btn-clear" onClick={(e) => handleCancel(e)}>
         Cancel
       </button>
     </form>

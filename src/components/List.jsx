@@ -7,5 +7,6 @@ export default function List({ items, toggleAcquired }) {
   const itemsList = items.map((item) => (
     <Item key={item.id} item={item} toggleAcquired={toggleAcquired} />
   ));
+
   return <section className="list">{itemsList}</section>;
 }

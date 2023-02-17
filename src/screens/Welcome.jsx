@@ -10,7 +10,7 @@ export default function Welcome({ items, addNewItem, openModal, closeModal }) {
   }
 
   return (
-    <div className="welcome-screen">
+    <main className="welcome-screen">
       <img
         className="shopping-image"
         src={shoppingImage}
@@ -27,6 +27,6 @@ export default function Welcome({ items, addNewItem, openModal, closeModal }) {
         image after the item is added by touching the camera icon.
       </p>
       <button onClick={() => handleClick()}>Add item</button>
-    </div>
+    </main>
   );
 }

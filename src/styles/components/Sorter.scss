@@ -1,10 +1,12 @@
 .sorter {
+  width: 70%;
   display: flex;
   align-items: center;
-  gap: $space-small;
+  justify-content: space-around;
+  font-size: $text-paragraph;
 
   button {
-    width: 100px;
+    width: 80px;
     height: 50px;
   }
 
@@ -14,5 +16,11 @@
 
   button:focus {
     background-color: $color-light-grey;
+  }
+}
+
+@media (min-width: 550px) {
+  .sorter {
+    font-size: $text-paragraph-desktop;
   }
 }

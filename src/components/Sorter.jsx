@@ -13,20 +13,14 @@ export default function Sorter({ pendingItems, setPendingItems }) {
   }
 
   return (
-    <span className="sorter">
+    <section className="sorter">
       Sort by:{" "}
-      <button
-        className="label button-no-background"
-        onClick={() => handleNameSort()}
-      >
+      <button className="label btn-clear" onClick={() => handleNameSort()}>
         Name
       </button>{" "}
-      <button
-        className="label button-no-background"
-        onClick={() => handlePriceSort()}
-      >
+      <button className="label btn-clear" onClick={() => handlePriceSort()}>
         Price
       </button>
-    </span>
+    </section>
   );
 }

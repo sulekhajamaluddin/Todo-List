@@ -42,27 +42,19 @@ export default function App() {
   }, [items]);
 
   const isFirstItem = items.length === 0;
+  const state = {
+    items,
+    addNewItem,
+    openModal,
+    closeModal,
+    toggleAcquired,
+  };
 
   return (
     <div className="main-page">
       <img className="logo" src={logo} alt="The word EIKA"></img>
-      {isFirstItem && (
-        <Welcome
-          items={items}
-          addNewItem={addNewItem}
-          openModal={openModal}
-          closeModal={closeModal}
-        />
-      )}
-      {!isFirstItem && (
-        <Shopping
-          items={items}
-          addNewItem={addNewItem}
-          openModal={openModal}
-          closeModal={closeModal}
-          toggleAcquired={toggleAcquired}
-        />
-      )}
+      {isFirstItem && <Welcome {...state} />}
+      {!isFirstItem && <Shopping {...state} />}
       <Modal modal={modal} openModal={openModal} closeModal={closeModal} />
     </div>
   );
